@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ssh-server:
+    container_name: ssh-server
+    image: ssh-server
+    build:
+      context: sshd-server
+    networks:
+      - net
+networks:
+  net:
